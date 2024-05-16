@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock of Clocks</title>
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #660000; /* Mississippi State University Maroon */
+    }
+    .clock {
+      display: inline-block;
+      border-radius: 50%;
+      margin: 20px;
+      padding: 5px;
+      color: #fff;
+      text-align: center;
+      font-size: 1.2rem;
+      position: relative;
+      background-color: #000000; 
+    }
+    .clock:nth-child(2n+1) {
+      background-color: #808080; 
+    }
+    .clock::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      height: 90%;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+      z-index: -1;
+    }
+    .clock::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70%;
+      height: 70%;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div id="clocks">
+    <script>
+      function updateClock() {
+        var now = new Date();
+        var bases = [16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2]; // Default bases from 16 down to 2
+
+        var clocksHTML = '';
+        bases.forEach(function(base) {
+          var timeString = now.getHours().toString(base).padStart(2, '0') + ':' +
+                            now.getMinutes().toString(base).padStart(2, '0') + ':' +
+                            now.getSeconds().toString(base).padStart(2, '0');
+          var baseTimeString = "Base " + base + " Time: " + timeString;
+          clocksHTML += '<div class="clock">' + baseTimeString + '</div>';
+        });
+
+        document.getElementById('clocks').innerHTML = clocksHTML;
+      }
+
+      // Update the clock every second
+      setInterval(updateClock, 1000);
+
+      // Initial call to display clock
+      updateClock();
+    </script>
+  </div>
+</body>
+</html>
