@@ -51,8 +51,7 @@ Built secure, real-time truck tracking systems for logistics clients, including 
 - **ERDC Technical Support Achievement Award (2002)**
 - Army G6 Information Assurance Security Project Nominee (2005)
 - Certificate of Appreciation – U.S. Army Transportation Information Systems (PM TIS)
-- - Presented by: Tami Johnson, Product Manager – 12 Feb 2009
-- - Recognized for key technical and leadership roles in the TC-AIMS II Theater Operations assessment and the successful deployment of the Regional Access Node (RAN) in Southwest Asia.
+-   Recognized for key technical and leadership roles in the TC-AIMS II Theater Operations assessment and the successful deployment of the Regional Access Node (RAN) in Southwest Asia.
 ---
 
 ## 🎓 Education
