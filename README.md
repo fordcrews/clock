@@ -1,7 +1,7 @@
 # Ford Crews
 
 **Systems Engineer | Information Assurance Specialist | Infrastructure Architect**  
-Crystal Springs, MS • fordc@fordnmel.com • (601) 569-4391
+Crystal Springs, MS • fcrews@gmail.com 
 
 ---
 
