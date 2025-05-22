@@ -29,7 +29,7 @@ Whether it's locking down 3,000+ endpoints, keeping mission-critical systems sec
 ### Secure Systems Monitoring – DoD Contractor (ERDC)
 Led the design and deployment of an enterprise monitoring infrastructure for military Citrix and Windows environments. Ensured uptime, resilience, and vulnerability compliance using custom monitoring, log analysis, and real-time alerting tools.
 
-### Nipper Globe / Portable GIS
+### NIPR Globe Services / Portable GIS
 Developed a portable, secure, offline-capable geospatial tool for DoD breakaway scenarios, based on Google Earth and hardened OS builds. Allowed operational continuity without network dependency.
 
 ### Multi-Agency Property System – Program Consultant
